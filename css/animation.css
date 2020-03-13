@@ -1,0 +1,193 @@
+/*ANIMACION DAE IN*/
+.fadeIn {
+  animation-duration: 2s;
+  animation-fill-mode: both; /*hace que el fade in se haga de ida y de regreso*/
+  animation-name: fadeIn; /*se le tiene que dar nombre a la variable*/
+/*el ewbkit nos ayuda a acoplar las animaciones a todos los navegadores*/
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+
+/*ANIMACION PARA "FADE IN DOWN"*/
+.fadeInDown {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+/*el ewbkit nos ayuda a acoplar las animaciones a todos los navegadores*/
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from{
+    opacity: 0;
+    transform: translate3d(0,-100%,0);
+    -webkit-    transform: translate3d(0,-100%,0);
+  }
+  to{
+    opacity:1;
+    transform: translate3d(0,0,0);
+    -webkit-    transform: translate3d(0,0,0);
+  }
+}
+
+
+/*ANIMACION FADE IN UP*/
+.fadeInUp {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+/*el ewbkit nos ayuda a acoplar las animaciones a todos los navegadores*/
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from{
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+    -webkit-    transform: translate3d(0,100%,0);
+  }
+  to{
+    opacity:1;
+    transform: translate3d(0,0,0);
+    -webkit-    transform: translate3d(0,0,0);
+  }
+}
+
+
+/*ANIMACION PULSO CAMBIO DE COLOR*/
+.pulse {
+  animation-duration: 5s;
+  animation-fill-mode: infinite;
+  animation-name: pulse;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: infinite;
+  -webkit-animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #049DD9;
+  }
+  100% {
+    background-color: #f6514A;
+  }
+}
+
+
+/*ANIMACION FLASH*/
+.flash:hover{
+	-webkit-animation: 0.7s flash 1;
+}
+
+@-webkit-keyframes flash{
+    50%{
+    	opacity: 1;
+    }
+    25%, 75%{
+    	opacity: 0;
+
+  }
+}
+
+
+/*ANIMACION CLICK*/
+.click:hover{
+	-webkit-animation: 0.7s click 1;
+
+}
+
+@-webkit-keyframes click{
+	25%, 75%{
+		-webkit-transform:scale(0.8);
+	}
+	50%{
+		-webkit-transform:scale(1);
+	}
+}
+
+/*ANIMACION CARTEL*/
+.cartel:hover{
+	-webkit-animation: 1s cartel 1;
+	-webkit-transform-origin: top center;
+}
+
+@-webkit-keyframes cartel{
+	20%{
+		-webkit-transform: rotate(15deg);
+	}
+
+	40%{
+		-webkit-transform: rotate(-10deg);
+	}
+	60%{
+		-webkit-transform: rotate(5deg);
+	}
+	80%{
+		-webkit-transform: rotate(-3deg);
+	}
+}
+
+/*ANIMACION VAIVEN*/
+.vaiven:hover{
+	-webkit-animation: 1s vaiven 1;
+
+}
+
+@-webkit-keyframes vaiven{
+	15%{
+		-webkit-transform: rotate(-10deg)
+		                  translateX(-25%);
+	}
+	30%{
+		-webkit-transform: rotate(5deg)
+		                  translateX(20%);
+	}
+	45%{
+		-webkit-transform: rotate(-3deg)
+		                  translateX(-10%);
+	}
+	60%{
+		-webkit-transform: rotate(2deg)
+		                  translateX(5%);
+	}
+	75%{
+		-webkit-transform: rotate(-1deg)
+		                  translateX(-3%);
+	}
+
+}
+
+/*ANIMACON DE COLORES*/
+.gradient{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+}
