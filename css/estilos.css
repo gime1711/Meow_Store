@@ -1,172 +1,230 @@
+/*--ESTILO GENERAL--*/
 html, body{
-  /* lo que se escriba aqui, es el estilo general de todo */
-  font-family: Helvetica;
+  font-family: Roboto;
   padding: 0px;
   margin:0px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
+/*--ESTILO NAV BAR--*/
 nav {
-  background-color: #f6514A;
+  background-color: #A0C3D2;
   display: flex;
   padding: 10px;
-  padding-left: 40px;
+  padding-left: 80px;
+  padding-right: 90px;
   color: white;
+  font-weight: bold;
   justify-content: space-between;
   align-items: center;
 }
 
-nav ul{           /*ul es la lista*/
-  display: flex; /* flex -> sirvepara dar un formato horizontal */
+nav ul{
+  display: flex;
 }
 
-/* para darle atributos a los items */
-nav li {      /*li son los items de la lista*/
+nav li {
   padding-left: 20px;
   list-style: none;
 }
 
-/* para darle estilo al link osea a */
 nav li a {
   color: white;
   text-decoration: none;
 }
 
-/* para hacer el hover, este funciona en cualquier contexto; para cualquier boton; mientras que llames a la etiqueta todo esta bien */
 nav li a:hover {
+  color: #454545;
+}
+
+/*--ESTILO MAIN SECTION--*/
+.main_section{
+  padding-top: 25px;
+  text-align: center;
+  font-family: Bahnschrift;
+  font-weight: Bold Condensed;
+  font-size: 20px;
+  line-height: 15px;
   color: black;
 }
 
-/* Estilo para main section (nav, html son etiquetas); una clase lleva puntos cuando se menciona en estilos */
-.main_section{
-  padding: 80px;
+h3.tmain3{
+  font-size: 35px;
+  color:#454545;
+    font-weight: lighter;
+}
+
+h1.tmain1{
+  font-size: 70px;
+  color: #F8C035;
+}
+
+h2.tmain2{
+  font-size: 45px;
+  color:#454545;
+}
+
+.img_main{
+    text-align: center;
+      background-image: url("../images/img_mainbg.svg");
+      background-size:contain;
+      background-position: center top;
+      display: flex;
+      justify-content: center;
+}
+
+/*--ESTILO BENEFICIOS--*/
+
+.beneficios_titulo{
+  padding-top: 70px;
   text-align: center;
-  font-size: 18px;
-  color: #049DD9;
+  font-family: Bahnschrift;
+  line-height: 20px;
+}
+
+h2.tbeneficios2{
+  font-size: 35px;
+  font-weight: lighter;
+  color: #454545;
+}
+
+h1.tbeneficios1{
+  font-size: 50px;
+  font-weight: Bold Condensed;
+  color: #A0C3D2;
+}
+
+h3.tbeneficios3 {
+  color: #A0C3D2;
+  font-family: Bahnschrift;
   font-weight: bold;
+  font-size: 20px;
+}
+
+.beneficios{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.beneficio {
+  text-align: center;
+  padding: 40px;
+  padding-top: 50px;
+}
+
+.text_beneficio{
+  line-height: 18px;
+  color: #4B4B4B;
+  margin-top: -15px;
+}
+
+
+/*--ESTILOS TOP PRODUCTOS--*/
+h1.ttopproductos{
+  text-align: center;
+  font-family: Bahnschrift;
+  font-weight: Bold Condensed;
+  font-size: 50px;
+  font-weight: Bold Condensed;
+  color: white;
+  background-color: #F6524B;
+  padding: 35px;
 }
 
 .products{
-  background-image: url("../images/bck_curve.png");
-/*  max-height: 500px; */
-  background-size: cover;
-  background-position: center top;
-  padding: 10px;
+  padding-top: 80px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
 }
 
 .product {
-  padding: 10px;
-  padding-bottom: 50px;
+  padding: 30px;
   margin-top: -75px;
 }
 
 .product .content{
   background-color: white;
   padding: 20px;
-  box-shadow: 0 0 2px #cecece;
+  padding-bottom: 30px;
+  box-shadow: 0 0 18px #cecece;
+  border-radius: 10px;
   text-align: center;
-  line-height: 30px;
 }
 
 .img_content{
   text-align center;
 }
 
+.topprod_text{
+  padding-top: 15px;
+  line-height: 10px;
+  padding-bottom: 20px;
+}
+
+.topprod_precio{
+  font-weight: bold;
+}
+
 .main_button{
-background-color: #f6514A;
+background-color: #A0C3D2;
+text-decoration: none;
 width: 100px;
 padding: 10px;
 font-size: 12px;
 color: white;
-border: 0px;
+border-radius: 10px;
 }
 
-/* Mi INTENTO de estilos para seccion ventajas */
-/*.mention_titulo {
-  color: #049DD9;
-  padding: 10px;
-  padding-top: 30px;
+.main_button:hover{
+  color: #454545;
+}
+
+.granproducts{
+  display: inherit;
   text-align: center;
-}
-
-.ad_section{
-  padding-top: 80px;
-  text-align: left;
-  font-size: 18px;
-  font-weight: regular;
-}
-
-.advantages{
-  background-color: white;
-  max-height: 500px;
-  background-size: cover;
-  background-position: center top;
-  padding: 10px;
-  display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
-
-.advantage {
+.showmore_button{
+  background-color: #F8C035;
+  width: 100px;
   padding: 10px;
-  margin-top: -75px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 12px #cecece;
 }
 
-.advantage .content2{
-  padding: 20px;
-  padding-top: 35px;
-  text-align: left;
-  line-height: 10px;
+.showmore_button:hover {
+  color: #454545;
 }
 
-.img_content2{
-  text-align center;
-  padding-bottom: 25px;
-}*/
 
-/* Estilos para seccion ventajas */
-.mention_titulo {
-  color: #049DD9;
-  padding: 10px;
-  padding-top: 30px;
-  text-align: center;
-}
-
-.beneficios{
-  padding:10px;
-  display: flex;
-  justify-content: center;
-}
-
-.beneficio {
-  text-align: center;
-  padding: 20px;
-}
-
-.text_beneficio{
-  color: black;
-}
-
-h3 {
-  color: #9D9FAA;
-}
-
-/*Estilos para seccion mencion*/
-
+/*--ESTILOS MENCIONES--*/
 .group_mencion{
-  background-image: url("../images/bck_curve2.png");
-  justify-content: center;
-  position: top;
-  background-size: cover;
-  /*max-height: 180px;*/
-  /*padding-bottom: 10px;*/
+  background-color: #A0C3D2;
 }
 
-h1.titulo_mencion{
-  color: #049DD9;
-  padding: 40px;
+.menciones_titulo{
+  padding-top: 70px;
   text-align: center;
+  font-family: Bahnschrift;
+  line-height: 20px;
+  color: white;
+}
+
+h2.tmenciones2{
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+h1.tmenciones1{
+  font-size: 50px;
+  font-weight: Bold Condensed;
 }
 
 .menciones {
@@ -174,6 +232,7 @@ h1.titulo_mencion{
   display: flex;
   text-align: center;
   justify-content: center;
+  line-height: 20px;
 }
 
 .mencion{
@@ -182,29 +241,44 @@ h1.titulo_mencion{
 }
 
 .content_mencion{
-box-shadow: 0px 0px 2px 5px #e6e5e9;
-background-color: white;
-padding-bottom: 10px;
+margin-top: -120px;
+padding-top: 120px;
+background-color: #F6524B;
+padding-bottom: 25px;
+border-radius: 10px
+
+}
+
+.title_mencion{
+  color: white;
+  font-family: Bahnschrift;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .content_img{
-  background-color: #F2CB05;
   padding: 10px;
 }
 
-/*Estilos para fotter*/
+/*ESTILOS FOOTER*/
 footer{
   display: flex;
   justify-content: space-between;
   font-size: 12px;
-  background-color: #F6514A;
+  background-color: #454545;
   padding: 10px;
-  margin-top: 100px;
   color: white;
 }
 
 .logos{
-  padding-right: 20px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.icon_img{
+  padding: 15px;
 }
 
 .option {
@@ -213,71 +287,49 @@ footer{
 }
 
 
-/* TARREA - Estilos para el HTML PRODUCTOS*/
-/*
-.main_productos{
-  padding: 50px;
-  text-align: center;
-  font-size: 18px;
-  color: #049DD9;
-  font-weight: bold;
-
-}
-
-.productos{
-  padding: 10px;
-  padding-top: 60px;
-  display:grid;
-  justify-content: center;
-}
-
-.producto{
-  padding: 10px;
-  margin-top: -75px;
-  background-color: white;
-  box-shadow: 0 0 2px #cecece;
+footer ul{
   display: flex;
 }
 
-.img_producto{
-  padding-right: 30px;
+footer li {
+  padding-left: 10px;
+  list-style: none;
 }
 
-.texto_producto{
-  padding-right: 10px;
-  margin-right: -90px;
-  padding-top: 30px;
-  text-align: right;
-
+footer li a {
+  color: white;
+  text-decoration: none;
 }
 
-h2.prod_precio h1.prod_titulo{
-    font-weight: bold;
-    line-height: 30px;
+footer li a:hover {
+  color: #F6524B;
 }
 
-p.prod_descripcion{
-  line-height: 18px;
-  text-align: right;
+/*--ESTILOS PAGINA PRODUCTOS--*/
+.prod_titulo{
+  padding-top: 25px;
+  text-align: center;
+  font-family: Bahnschrift;
+  font-weight: Bold Condensed;
+  font-size: 20px;
+  line-height: 15px;
+  color: black;
 }
 
-.boton{
-  padding-top: 280px;
-  padding-right: 40px;
-
+h3.tprod2{
+  font-size: 35px;
+  color:#454545;
+    font-weight: lighter;
 }
-.btn_productos{
-background-color: #f6514A;
-width: 100px;
-height: 40px;
-padding: 10px;
-font-size: 12px;
-color: white;
-border: 0px;
-}
-*/
 
-/*Estilos para venta*/
+
+h1.tprod1{
+  font-size: 70px;
+  color: #F8C035;
+}
+
+
+/*ESTILOS VENTA*/
 .modulo_pago{
   background-color: white;
   box-shadow: 0px 0px 2px 1px #e6e5e9;
@@ -300,4 +352,53 @@ border: 0px;
 
 .modulo_pago .main_button{
   padding-top: 10px;
+}
+
+
+/*ESTILOS TERMINOS Y CONDICIONES*/
+.ttercon{
+  text-align: center;
+  font-family: Bahnschrift;
+  font-weight: Bold Condensed;
+  font-size: 35px;
+  font-weight: Bold Condensed;
+  color: #454545;
+  padding: 35px;
+}
+
+.terminos_cond{
+  margin-left: 180px;
+  margin-right: 180px;
+  padding-bottom: 120px;
+  line-height: 25px;
+
+  background-image: url("../images/img_mainbg.svg");
+  background-size:contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+/*ESTILOS POLITICAS PRIVACIDAD*/
+.tpolpriv{
+  text-align: center;
+  font-family: Bahnschrift;
+  font-weight: Bold Condensed;
+  font-size: 35px;
+  font-weight: Bold Condensed;
+  color: #454545;
+  padding: 35px;
+}
+
+.seccion_polpriv{
+  margin-left: 180px;
+  margin-right: 180px;
+  padding-bottom: 120px;
+  line-height: 25px;
+
+  background-image: url("../images/img_mainbg.svg");
+  background-size:contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  justify-content: center;
 }

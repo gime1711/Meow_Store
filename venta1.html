@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PAWSHOP</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> PERMITE JALAR TLO QUE USE DE BOOTSTRAP-->
+    <link rel= "stylesheet"type ="text/css" href="css/estilos.css">
+    <link rel= "stylesheet"type ="text/css" href="css/normalize.css">
+    <link rel= "stylesheet"type ="text/css" href="css/mobile.css">
+    <link rel= "stylesheet"type ="text/css" href="css/animation.css">
+    <link rel= "stylesheet"type ="text/css" href="css/grid.css">
+
+  </head>
+  <body>
+    <!-- Aqui va a comenzar Nav Bar -->
+    <nav class="fadeIn">
+      <div class="img_brand">
+      <a href= "index.html"><img src="images/img_logo.svg" alt=""></a>
+      </div>
+      <div class = "nav_options">
+        <ul>
+        <li><a href = "#">FAQs</a></li>
+        <li><a href = "productos.html" >PRODUCTO/DESCRIPCIÓN</a></li>
+        </ul>
+        </div>
+    </nav>
+  <!-- Aqui acaba el navbar -->
+
+<!-- Aqui comienza container -->
+<div class = "container">
+<div class="row">
+  <div class= "col-04 flash">
+    <div class= "modulo_pago">
+      <div class= "modulo">
+        <div class= "modulo_pago_images">
+          <img src= "images/venta1.svg" alt="">
+        </div>
+        <h3>Dr. McClaws</h3>
+        <p> ¿Quién necesita estudiar medicina cuando puedes estudiar MEOW-dicina?</p>
+        <h4> $280.00</h4>
+      </div>
+  </div>
+</div>
+
+<div class = "col-08">
+  <div class ="modulo_pago">
+    <form action = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9T8LUN6X2S8BL" method = "post">
+      <label for="name"> Nombre:</label>
+      <br>
+      <input type="text" placeholder="Escribe tu nombre" name="nombre" class="data">
+      <br>
+      <br>
+      <label for="email"> Correo electrónico:</label>
+      <br>
+      <input type="email" placeholder="Escribe tu correo" name="email" class="data">
+      <br>
+      <br>
+      <label for="phonenumber"> Teléfono:</label>
+      <br>
+      <input type="phonenumber" placeholder="Escribe tu teléfono" name="phonenumber" class="data">
+      <br>
+      <br>
+      <input type="submit" name="submit" value="Comprar ahora" class="main_button">
+
+      </form>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- Aqui finaliza container -->
+
+
+  <!-- Inicio de footer -->
+  <footer class="fadeInUp">
+    <div class = "option">
+      <ul>
+      <li><a href = "politica_priv.html">©2020 Company.  Política de Privacidad</a></li>
+      <li><a href = "terminos_condiciones.html" >| Términos & Condiciones.</a></li>
+      </ul>
+    </div>
+    <div class= "logos">
+    <div class= "icon_img">
+    <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt=""></a>
+    </div>
+    <div class= "icon_img">
+    <a href="http://www.twitter.com" target="_blank"><img src="images/twitter.svg" alt=""></a>
+      </div>
+    <div class= "icon_img">
+    <a href="http://www.instagram.com" target="_blank"><img src="images/insta.svg" alt=""></a>
+      </div>
+        <div class= "icon_img">
+    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt=""></a>
+  </div>
+    </div>
+  </footer>
+  <!-- Aquí termina el footer -->
+  </body>
+</html>
